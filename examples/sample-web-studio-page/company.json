@@ -1,0 +1,82 @@
+{
+  "slug": "hartley-roofing",
+  "name": "Hartley Roofing",
+  "prepared_date": "October 2026",
+  "offer": "website-rebuild",
+  "currency": "GBP",
+  "brand": {
+    "colours": {
+      "teal": "#b5452b",
+      "deep": "#3a2a24",
+      "yellow": "#f2b541",
+      "ink": "#1d1d1d",
+      "muted": "#5b5f62",
+      "paper": "#fdfaf6",
+      "navy": "#3a2a24",
+      "soft": "#f6eee8",
+      "pale": "#f1ddd4",
+      "line": "#e7d8cf"
+    },
+    "fonts": {
+      "body": "Inter",
+      "heading": "Archivo Black",
+      "google_url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Archivo+Black&display=swap"
+    }
+  },
+  "logo": "art/logo.png",
+  "hero": {
+    "path": "images/hero.jpg",
+    "alt": "Hartley Roofing colours",
+    "photo": true
+  },
+  "goal": {
+    "headline": "More roofing jobs from people who find you online.",
+    "lead": "Your work is good. Your website should win you the next job."
+  },
+  "noticed": [
+    {
+      "date": "2026-09-02",
+      "url": "https://www.example.com/hartley-roofing/news",
+      "text": "You took on two new roofers in September."
+    },
+    {
+      "date": "2026-08-14",
+      "url": "https://www.example.com/hartley-roofing/reviews",
+      "text": "Your reviews praise the work, and two say your website was hard to use."
+    },
+    {
+      "date": "2026-07-30",
+      "url": "https://www.example.com/hartley-roofing",
+      "text": "Your website has no quote form and one page for every service."
+    }
+  ],
+  "noticed_summary": "You are growing, and your website is behind your work.",
+  "look_at_first": [
+    {
+      "title": "A quote form on every page",
+      "text": "People can ask for a price in a minute, from their phone."
+    },
+    {
+      "title": "A page for each kind of job",
+      "text": "Flat roofs, repairs and new roofs each get found on their own."
+    },
+    {
+      "title": "Your reviews up front",
+      "text": "The praise you already earn helps you win the next job."
+    }
+  ],
+  "example": {
+    "heading": "One page, before and after.",
+    "lead": "Here is your repairs page, as it is and as it could be.",
+    "before": {
+      "title": "Today",
+      "text": "One long page lists every service. There is a phone number, and no way to ask for a quote."
+    },
+    "after": {
+      "title": "With us",
+      "text": "A repairs page with photos of your work, three reviews and a quote form that texts you."
+    },
+    "source_label": "your current website",
+    "source_url": "https://www.example.com/hartley-roofing"
+  }
+}

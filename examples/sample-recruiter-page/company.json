@@ -1,0 +1,82 @@
+{
+  "slug": "calder-precision",
+  "name": "Calder Precision",
+  "prepared_date": "October 2026",
+  "offer": "retained-search",
+  "currency": "GBP",
+  "brand": {
+    "colours": {
+      "teal": "#1f6f8b",
+      "deep": "#13324a",
+      "yellow": "#e3a72f",
+      "ink": "#1d1d1d",
+      "muted": "#5b5f62",
+      "paper": "#f7f9fb",
+      "navy": "#13324a",
+      "soft": "#eaf1f5",
+      "pale": "#d6e6ee",
+      "line": "#d3dde3"
+    },
+    "fonts": {
+      "body": "Inter",
+      "heading": "Oswald",
+      "google_url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Oswald:wght@500;700&display=swap"
+    }
+  },
+  "logo": "art/logo.png",
+  "hero": {
+    "path": "images/hero.jpg",
+    "alt": "Calder Precision colours",
+    "photo": true
+  },
+  "goal": {
+    "headline": "Keep the new machines running with the right people.",
+    "lead": "You have the orders and the machines. Now you need the engineers."
+  },
+  "noticed": [
+    {
+      "date": "2026-09-18",
+      "url": "https://www.example.com/calder-precision/news",
+      "text": "You installed two new five-axis machines in September."
+    },
+    {
+      "date": "2026-08-05",
+      "url": "https://www.example.com/calder-precision/careers",
+      "text": "Your CNC programmer job ad has been open since August."
+    },
+    {
+      "date": "2026-06-20",
+      "url": "https://www.example.com/calder-precision/news",
+      "text": "You won an aerospace contract in June."
+    }
+  ],
+  "noticed_summary": "You are growing fast, and one hire stands between you and full use of the new machines.",
+  "look_at_first": [
+    {
+      "title": "The CNC programmer role",
+      "text": "The role that keeps the new machines busy."
+    },
+    {
+      "title": "A second shift lead",
+      "text": "Someone to run nights as the aerospace work grows."
+    },
+    {
+      "title": "An apprentice route",
+      "text": "A way to grow your own engineers for next year."
+    }
+  ],
+  "example": {
+    "heading": "Your open role, a different way.",
+    "lead": "Here is your CNC programmer search, as it is and as it could be.",
+    "before": {
+      "title": "Today",
+      "text": "One job ad has been open since August. Few people apply, and few have five-axis skills."
+    },
+    "after": {
+      "title": "With us",
+      "text": "We call engineers who already run five-axis machines. You meet the best three in three weeks."
+    },
+    "source_label": "your job advert",
+    "source_url": "https://www.example.com/calder-precision/careers"
+  }
+}

@@ -1,0 +1,346 @@
+{
+  "version": 1,
+  "scope": {
+    "label": "Ops Map",
+    "summary": "Discovery and design for one team or your whole firm.",
+    "in": [
+      "Understand how work gets done",
+      "Find where AI could help",
+      "Show what changes and how",
+      "A report and the files to edit it"
+    ],
+    "out": [
+      "Build the solutions",
+      "Coaching, training and implementation"
+    ],
+    "price_key": "sprint",
+    "duration": "3 weeks"
+  },
+  "copy": {
+    "hero_line": "An Ops Map follows how work really flows through your firm, then gives you a clear plan.",
+    "hero_button": "Explore your Ops Map",
+    "offer_meta": "3 weeks · one team or the whole firm",
+    "proof_lead": "Three results, in numbers.",
+    "price_note": "Fixed fee, agreed before we start.",
+    "call_button": "Book a free 30-minute call"
+  },
+  "method_steps": [
+    {
+      "title": "Agree the goals",
+      "text": "Scope, and who takes part"
+    },
+    {
+      "title": "Map the work",
+      "text": "Interviews, captured knowledge and process maps"
+    },
+    {
+      "title": "Match and design",
+      "text": "Ranked solutions and an agreed roadmap"
+    },
+    {
+      "title": "Walk through the report",
+      "text": "Editable files and clear next steps"
+    }
+  ],
+  "method_beats": [
+    {
+      "title": "Listen to the team",
+      "text": "Interview the people doing the work. Agree what growth and better service mean to them.",
+      "art": "interviews"
+    },
+    {
+      "title": "Capture their knowledge",
+      "text": "Bring useful knowledge out of people’s heads, including the difficult cases.",
+      "art": "knowledge"
+    },
+    {
+      "title": "Map the workflows",
+      "text": "Follow real examples across teams. Find where information helps the next person act.",
+      "art": "workflows"
+    },
+    {
+      "title": "Draw the process maps",
+      "text": "Make handovers, delays and roles clear. Build on your current tools and planned work.",
+      "art": "processmap-43"
+    },
+    {
+      "title": "Rank the opportunities",
+      "text": "Compare revenue, cost and time. Agree value, effort, readiness and risk with the team.",
+      "art": "opportunities"
+    },
+    {
+      "title": "Set out the roadmap",
+      "text": "Choose the next actions and owners. Walk through the report together.",
+      "art": "report"
+    }
+  ],
+  "proof_heading": "I've done this kind of work before.",
+  "proof_art": "report",
+  "proof_tiles": [
+    {
+      "id": "month-end",
+      "number": "40%",
+      "heading": "Faster month-end close",
+      "text": "A 30-person accountancy now closes the month in days.",
+      "who": "Accountancy firm · sample result",
+      "after_percent": 60
+    },
+    {
+      "id": "scheduling",
+      "number": "12 hours",
+      "heading": "Saved each week",
+      "text": "A care agency stopped building rotas by hand.",
+      "who": "Care agency · sample result"
+    },
+    {
+      "id": "induction",
+      "number": "1",
+      "heading": "Induction guide",
+      "text": "I rewrote the induction guide that supported the case for staff training.",
+      "who": "Logistics firm · sample result"
+    }
+  ],
+  "about": {
+    "heading": "Hi, I'm Priya.",
+    "lead": "I founded Northlight Ops after 15 years running operations in accountancy and care. Now I help service firms use AI to grow, cut costs and give people hours back.",
+    "logo_label": "",
+    "facts": [
+      {
+        "title": "15 years",
+        "text": "Running operations in accountancy and care."
+      },
+      {
+        "title": "Owner-led",
+        "text": "Firms of 10 to 80 people."
+      },
+      {
+        "title": "Maps first",
+        "text": "I learn how the work flows before anything is built."
+      }
+    ]
+  },
+  "logos": [],
+  "people": {
+    "promises": [
+      {
+        "title": "You keep your expertise.",
+        "text": "AI drafts. Your people decide."
+      },
+      {
+        "title": "We start with your people.",
+        "text": "We talk to each group and learn how the work really gets done."
+      },
+      {
+        "title": "We show what changes.",
+        "text": "For each task, the report says where AI could help, what stays with people, and how the work changes."
+      },
+      {
+        "title": "You work well apart.",
+        "text": "London, home or another country: shared ways for your team to work with AI agents."
+      }
+    ],
+    "timeline": [
+      {
+        "title": "Listen",
+        "text": "Short chats with each group",
+        "column": "1/3"
+      },
+      {
+        "title": "Map the work",
+        "text": "Real examples, hand-over by hand-over",
+        "column": "2/4"
+      },
+      {
+        "title": "Rank the opportunities",
+        "text": "Where AI could help, and what changes",
+        "column": "3/5"
+      },
+      {
+        "title": "Walk through the report",
+        "text": "Together, with your team",
+        "column": "4/5"
+      }
+    ]
+  },
+  "report_defaults": {
+    "page_count": 14,
+    "inside_pages": 12,
+    "sample_label": "Sample report · illustrative",
+    "example_tag": "Example numbers · not yours",
+    "goal_cards": [
+      [
+        "Look",
+        "We follow the work as it really happens."
+      ],
+      [
+        "Choose",
+        "We pick the solutions that help the most."
+      ],
+      [
+        "Plan",
+        "We say who does what, and in what order."
+      ]
+    ],
+    "ai_rule": "AI never changes the books or emails a client on its own.",
+    "solutions": [
+      {
+        "name": "Month-start summary",
+        "value": "High",
+        "effort": "Medium",
+        "risk": "Low",
+        "x": 75,
+        "y": 20
+      },
+      {
+        "name": "Match reviews",
+        "value": "High",
+        "effort": "Medium",
+        "risk": "Medium",
+        "x": 60,
+        "y": 36
+      },
+      {
+        "name": "Missing-item reminders",
+        "value": "Medium",
+        "effort": "Low",
+        "risk": "Low",
+        "x": 86,
+        "y": 73
+      },
+      {
+        "name": "Auto-reconcile",
+        "value": "High",
+        "effort": "High",
+        "risk": "High",
+        "x": 18,
+        "y": 30
+      }
+    ],
+    "ranking_note": "We agree the order with your team. Value, effort and risk guide each choice.",
+    "saving": {
+      "before": 5,
+      "routine_removed": 4,
+      "review": 1,
+      "unit": "hours",
+      "period": "a month on this task"
+    },
+    "rules": [
+      "A person makes every final choice.",
+      "AI shows its working, so it can be reviewed.",
+      "We start small, test, then grow.",
+      "AI does not change the books by itself.",
+      "AI does not email clients by itself."
+    ],
+    "roadmap": [
+      [
+        "Now",
+        "Understand the work",
+        "Interview the team. Draw the road from records to advice."
+      ],
+      [
+        "Next",
+        "Rank the solutions",
+        "Score value, effort and risk. Agree the order."
+      ],
+      [
+        "Then",
+        "Agree the plan",
+        "Name who does what, and when. Decide if you build."
+      ]
+    ],
+    "start": [
+      [
+        "Talk for 30 minutes",
+        "A free call to see if this fits."
+      ],
+      [
+        "Agree the scope",
+        "One team, or the whole business."
+      ],
+      [
+        "Run the sprint",
+        "2 to 4 weeks. Then you get this report."
+      ]
+    ],
+    "keep": [
+      [
+        "A map of the work today",
+        "See where time and handovers get stuck"
+      ],
+      [
+        "The hours, step by step",
+        "Know what to solve first"
+      ],
+      [
+        "A ranked list of solutions",
+        "Spend effort where it pays"
+      ],
+      [
+        "Your tools, reviewed",
+        "Keep what already works"
+      ],
+      [
+        "A plan with owners",
+        "Know who does what, and when"
+      ],
+      [
+        "This report, a live walk-through and the files to edit",
+        "Use it with your team or any partner"
+      ]
+    ]
+  },
+  "banned_phrases": [
+    "estimated",
+    "co-built with",
+    "separate engagements",
+    "might",
+    "preparation",
+    "bundle",
+    "fictional",
+    "currentness",
+    "would test",
+    "source-and-question",
+    "unlock",
+    "leverage",
+    "potentially",
+    "guaranteed",
+    "results may vary"
+  ],
+  "hedge_phrases": [
+    "perhaps",
+    "possibly",
+    "could potentially",
+    "may help",
+    "we believe",
+    "we think",
+    "no guarantee",
+    "results are not guaranteed"
+  ],
+  "scope_words": [
+    "coaching",
+    "training",
+    "implementation"
+  ],
+  "scope_exception": {
+    "reason": "Exact locked historical proof only; it is not part of the offer.",
+    "proof_id": "induction",
+    "text": "I rewrote the induction guide that supported the case for staff training."
+  },
+  "vocabulary_map": {
+    "fix": "solution",
+    "fixes": "solutions",
+    "utilise": "use",
+    "utilize": "use",
+    "prioritize": "rank",
+    "prioritise": "rank",
+    "optimize": "improve"
+  },
+  "reading_level": {
+    "metric": "Flesch-Kincaid grade",
+    "max_grade": 5.0,
+    "golden_grade": 3.21,
+    "report_max_paragraph_words": 40,
+    "report_max_paragraph_sentences": 2,
+    "calibration": "Golden page 3.21 with this parser and syllable heuristic. Grade 5 is the ceiling for new copy."
+  }
+}

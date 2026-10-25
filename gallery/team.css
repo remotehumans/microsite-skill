@@ -1,0 +1,60 @@
+/* Team tab: people map beside a person card. Uses the gallery's paper, ink and orange. */
+.site-pane{position:relative}
+#team-stage{position:absolute;inset:46px 0 0 0;z-index:3;overflow:auto;padding:22px 26px 28px;background:var(--paper)}
+.tm-head{display:flex;justify-content:space-between;gap:20px;align-items:flex-start;flex-wrap:wrap;margin-bottom:6px}
+.tm-eyebrow{font:11px var(--mono);text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin:0 0 6px}
+.tm-head h3{font:400 26px/1.25 var(--serif);margin:0 0 4px;letter-spacing:-.02em}
+.tm-chips{display:flex;gap:6px;flex-wrap:wrap}
+.tm-chips button{font-size:12px;padding:6px 12px;border-radius:99px;background:var(--surface)}
+.tm-chips button[aria-pressed=true]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.tm-map{position:relative;width:min(100%,1000px);min-width:860px;aspect-ratio:1000/760;margin:34px auto 6px}
+.tm-map svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.tm-group{fill:rgba(255,255,255,.4);stroke:#8d897d;stroke-width:1.3}
+.tm-glabel{position:absolute;transform:translate(-50%,-50%);z-index:4;white-space:nowrap;font:700 13px Inter,Arial,sans-serif;background:var(--ink);color:var(--paper);padding:5px 13px;border-radius:99px;letter-spacing:.01em}.tm-glabel em{font-style:normal;font-weight:500;opacity:.7;margin-left:4px}
+.tm-person{position:absolute;transform:translate(-50%,-50%);display:grid;justify-items:center;gap:6px;padding:0;border:0;background:none;width:8.4%;min-width:56px;--ring:#c9c5ba}
+.tm-person:hover{background:none;z-index:5}.tm-person.is-selected{z-index:6}
+.tm-photo{position:relative;display:block;width:100%;aspect-ratio:1;border-radius:50%;overflow:hidden;background:#e4e1d8;border:4px solid var(--ring);box-shadow:0 0 0 3px var(--paper);transition:transform .15s ease-out}
+.tm-person:not(.has-score) .tm-photo{border-style:dashed;border-color:#b7b3a7}
+.tm-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top}
+.tm-photo b{position:absolute;inset:0;display:grid;place-items:center;font:700 18px Inter,Arial,sans-serif;color:var(--muted)}
+.tm-photo img+b{z-index:-1}
+.tm-person:hover .tm-photo,.tm-person:focus-visible .tm-photo{transform:scale(1.08)}
+.tm-person.is-selected .tm-photo{border:4px solid var(--ink);transform:scale(1.12)}
+.tm-person.is-dim{opacity:.22}
+.tm-name{font-size:13px;font-weight:700;background:var(--paper);padding:1px 7px;border-radius:99px;border:1px solid var(--line);white-space:nowrap;position:relative;z-index:2}
+.tm-flag{position:absolute;top:-2px;width:18px;height:18px;border-radius:50%;border:2px solid var(--paper)}
+.tm-tech{background:var(--accent)}
+.tm-away{background:#315b45}
+.tm-flag.tm-tech{right:2px}.tm-flag.tm-away{left:2px}
+.tm-legend{display:flex;gap:22px;flex-wrap:wrap;align-items:center;justify-content:center;font-size:13px;color:var(--muted);margin-top:30px}
+.tm-swatch{display:inline-block;width:12px;height:12px;border-radius:50%;vertical-align:-1px;margin-right:6px}
+.tm-scale{display:inline-flex;align-items:center;gap:8px}
+.tm-steps{display:inline-flex;gap:3px}
+.tm-steps i{width:14px;height:14px;border-radius:50%;background:var(--ring)}
+.tm-steps i.none{background:none;border:2px dashed #b7b3a7}
+.tm-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:0 0 22px;border-top:2px solid var(--ink);padding-top:14px}
+.tm-stat b{display:block;font:400 30px/1.1 var(--serif);color:var(--accent);letter-spacing:-.02em}
+.tm-stat span{display:block;font-size:11px;line-height:1.45;color:var(--ink);margin-top:4px}
+.tm-hint{color:var(--muted);font-size:13px;margin:0 0 22px}
+.tm-card{border-top:1px solid var(--line);padding-top:18px;margin-bottom:22px}
+.tm-card-top{display:flex;gap:14px;align-items:center;margin-bottom:10px}
+.tm-card-top h3{margin:0 0 2px!important;font-size:20px!important}
+.tm-card-top p{margin:0!important}
+.tm-big{width:64px;flex:none;box-shadow:none}
+.tm-dl{margin:0}.tm-dl>div{margin:0 0 12px}
+.tm-dl dt{font:10px var(--mono);text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:0 0 2px}
+.tm-dl dd{margin:0;font-size:13px;line-height:1.6}
+.tm-tag{display:inline-block;border:1px solid var(--line);background:var(--surface);padding:1px 9px;border-radius:99px;font-size:11px;margin:0 5px 5px 0}
+.tm-score{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:12px 14px}
+.tm-score label{margin:0 0 6px!important}
+.tm-score input[type=range]{width:100%;accent-color:var(--accent)}
+.tm-score textarea{width:100%;min-height:76px;border:1px solid #aba89e;border-radius:4px;padding:8px;background:var(--paper);resize:vertical}
+.tm-facts{padding-left:18px}.tm-take{background:var(--surface);border-left:3px solid var(--accent);padding:10px 12px}
+@media(max-width:750px){#team-stage{padding:16px 12px}.tm-person{min-width:44px}.tm-photo{border-width:3px}.tm-name{font-size:10px}.tm-group-label{font-size:18px}.tm-photo b{font-size:13px}}
+
+#reviewer[data-tab=team] [data-deployment-review]{display:none}
+
+.tm-progress{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:12px;font-size:12px;color:var(--muted)}.tm-progress button{font-size:12px;background:var(--ink);color:var(--paper);border-color:var(--ink)}
+
+.tm-phone-roster{display:none}
+@media(max-width:750px){.tm-map{display:none}.tm-phone-roster{display:block;margin-top:24px}.tm-phone-roster section{margin-bottom:22px}.tm-phone-roster h4{margin-bottom:8px;font-size:14px}.tm-phone-person{display:flex;justify-content:space-between;align-items:center;width:100%;min-height:54px;padding:12px 0;text-align:left;background:transparent;border:0;border-bottom:1px solid var(--line);border-radius:0}.tm-phone-person small{display:block;font-size:12px;margin-top:4px;color:var(--muted)}.tm-phone-person b{font-size:14px}}

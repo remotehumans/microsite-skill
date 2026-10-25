@@ -1,0 +1,19 @@
+// Optional, sourced company intelligence for the private Team view.
+(function (root) {
+  const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const link = (url, label) => /^https?:\/\//.test(url || '') ? `<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(label)} ↗</a>` : esc(label);
+  function render(d) {
+    if (!d) return '';
+    const a=d.ai, h=d.hiring;
+    const metric=(value,label,note)=>`<article class="ti-metric"><strong>${esc(value)}</strong><h4>${esc(label)}</h4><p>${esc(note)}</p></article>`;
+    return `<section class="ti" aria-label="Company research brief"><header class="ti-heading"><div><p class="tm-eyebrow">Outreach research · ${esc(d.checked_on)}</p><h3>What the evidence tells us</h3><p>${esc(d.headline)}</p></div><span class="ti-scope">${esc(d.scope)}</span></header>
+      <div class="ti-metrics">${metric(a.score === null ? 'Unknown' : a.score+'/10','Internal AI evidence',a.confidence+' confidence · '+a.summary)}${metric(h.active_count,'Active role adverts',h.scope+' · '+h.talent_pool_count+' talent-pool listing excluded')}${metric(h.london_count,'London-linked role adverts',h.london_note)}</div>
+      <div class="ti-columns"><article class="ti-panel"><p class="tm-eyebrow">AI evidence</p><h4>${esc(a.verdict)}</h4><p>${esc(a.reason)}</p><ul>${a.evidence.map(e=>`<li><b>${esc(e.label)}</b><p>${esc(e.text)}</p><small>${esc(e.date_label)} · ${link(e.url,'Source')}</small></li>`).join('')}</ul><details><summary>How the score works</summary><p>${esc(a.rubric)}</p><p>${esc(a.limits)}</p></details></article>
+      <article class="ti-panel"><p class="tm-eyebrow">What to discuss</p><h4>Build on the capability they already have</h4>${d.angles.map(x=>`<div class="ti-angle"><b>${esc(x.title)}</b><p>${esc(x.text)}</p><small>Research hypothesis · ${link(x.url,'Evidence')}</small></div>`).join('')}<p class="ti-question">${esc(d.discovery_question)}</p></article></div>
+      <details class="ti-panel ti-hiring"><summary>Hiring, tools and their language</summary><p>${esc(h.method)} ${link(h.url,'Live careers board')}</p><div class="ti-columns"><div><h4>Tools named in original sources</h4><ul>${d.tools.map(x=>`<li><b>${esc(x.name)}</b><p>${esc(x.use)}</p><small>${esc(x.scope)} · ${link(x.url,'Source')}</small></li>`).join('')}</ul></div><div><h4>How they describe their work</h4><p>${esc(d.story.text)}</p><p>${link(d.story.url,'Our Story')}</p><ul>${d.language.map(x=>`<li><b>${esc(x.term)}</b><p>${esc(x.meaning)}</p><small>${link(x.url,'Source')}</small></li>`).join('')}</ul></div></div>
+      <div class="ti-table-scroll"><table><caption>Current role adverts · checked ${esc(d.checked_on)}</caption><thead><tr><th>Role</th><th>Location</th><th>Team</th><th>Type</th></tr></thead><tbody>${h.roles.filter(x=>x.status==='active').map(x=>`<tr><td>${link(x.url,x.title)}</td><td>${esc(x.location)}</td><td>${esc(x.department)}</td><td>${esc(x.employment)}</td></tr>`).join('')}</tbody></table></div><h4>Recent adverts, separate from the live count</h4><ul>${h.recent.map(x=>`<li><b>${esc(x.title)}</b><p>${esc(x.text)}</p><small>${esc(x.status)} · ${link(x.url,'Advert')}</small></li>`).join('')}</ul></details>
+      <details class="ti-panel"><summary>LinkedIn review and contact priorities</summary><p>${esc(d.people_coverage.summary)}</p><p>${esc(d.people_coverage.limits)} ${link(d.people_coverage.url,'Company People tab')}</p><ol>${d.contact_priorities.map(x=>`<li><b>${esc(x.name)} · ${esc(x.role)}</b><p>${esc(x.why)}</p><small>${link(x.url,'Profile / role source')}</small></li>`).join('')}</ol><p>${esc(d.people_coverage.provider_note)}</p></details></section>`;
+  }
+  root.TeamIntelligence={render};
+  if(typeof module==='object')module.exports={render};
+})(typeof window==='undefined'?globalThis:window);

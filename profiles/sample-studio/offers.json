@@ -1,0 +1,16 @@
+{
+  "_about": "Sample offer prices for the fictional Northlight Ops profile.",
+  "sprint": {
+    "label": "Ops Map",
+    "prices": {
+      "GBP": "From £2,400"
+    },
+    "base": {
+      "currency": "GBP",
+      "amount": 2400,
+      "prefix": "From "
+    },
+    "booking_url": "https://cal.example/priya/ops-map",
+    "page": "sprint"
+  }
+}

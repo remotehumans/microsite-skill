@@ -1,0 +1,20 @@
+{
+ "name": "Sample: accountancy firms",
+ "mode": "many",
+ "about": "Many companies found from your ideal client",
+ "created": "2026-10-01",
+ "brief": {
+  "request": "Find me 3 accountancy firms in Northern England with 10 to 60 staff and over £1m in revenue",
+  "icp": "Owner-led accountancy firms of 10 to 60 people that are growing their advisory work.",
+  "area": "Northern England",
+  "sectors": [
+   "Accountancy and bookkeeping"
+  ],
+  "size": "10 to 60 people, turnover over £1m",
+  "how_many": 3,
+  "cost_ceiling": "$1 of Treg calls for the whole campaign",
+  "notes": "Fictional sample. Nothing here is real."
+ },
+ "counts": {},
+ "last_updated_utc": "2026-10-01T09:00:00+00:00"
+}

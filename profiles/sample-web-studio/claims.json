@@ -1,0 +1,83 @@
+{
+  "_about": "Wording on every page: your results, about you, and the voice rules the build checks. Locked: pages show it exactly as written.",
+  "proof_heading": "Work like this, done before.",
+  "copy": {
+    "proof_lead": "Three results, in numbers."
+  },
+  "proof_tiles": [
+    {
+      "id": "roofer-leads",
+      "number": "3x",
+      "heading": "More quote requests",
+      "text": "A roofer in Wakefield now gets most jobs through the site.",
+      "who": "Roofing firm · sample result"
+    },
+    {
+      "id": "plumber-calls",
+      "number": "40",
+      "heading": "Calls in the first month",
+      "text": "A plumber in Harrogate filled his diary from the new site.",
+      "who": "Plumbing firm · sample result"
+    },
+    {
+      "id": "builder-time",
+      "number": "5 hours",
+      "heading": "Saved each week",
+      "text": "A builder stopped answering the same questions by phone.",
+      "who": "Building firm · sample result"
+    }
+  ],
+  "proof_art": "",
+  "about": {
+    "heading": "Hi, I'm Jo.",
+    "lead": "I started Fieldwork Web to build websites that bring trades firms real work. I keep them simple, fast and easy to update.",
+    "logo_label": "",
+    "facts": [
+      {
+        "title": "9 years",
+        "text": "Building websites for trades firms."
+      },
+      {
+        "title": "Yorkshire",
+        "text": "Roofers, plumbers and builders."
+      },
+      {
+        "title": "Plain pages",
+        "text": "Fast to load and easy to update."
+      }
+    ]
+  },
+  "logos": [],
+  "banned_phrases": [
+    "unlock",
+    "leverage",
+    "synergy",
+    "game-changer",
+    "revolutionise",
+    "seamless",
+    "guaranteed",
+    "results may vary"
+  ],
+  "hedge_phrases": [
+    "perhaps",
+    "possibly",
+    "could potentially",
+    "may help",
+    "we believe",
+    "we think",
+    "no guarantee"
+  ],
+  "vocabulary_map": {
+    "utilise": "use",
+    "utilize": "use",
+    "optimise": "improve",
+    "optimize": "improve"
+  },
+  "reading_level": {
+    "metric": "Flesch-Kincaid grade",
+    "max_grade": 6.0,
+    "report_max_paragraph_words": 40,
+    "report_max_paragraph_sentences": 2,
+    "calibration": "Grade 6 reads easily for busy owners on a phone. Lower it for a plainer voice."
+  }
+}

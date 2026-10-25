@@ -1,0 +1,46 @@
+{
+  "_about": "What you sell. One entry per offer; the key (e.g. main-offer) is how pages and campaigns refer to it. Every page sells one offer, in your words. page: standard for most offers; sprint only for a fixed discovery offer whose deliverable is a report (the report-book layout). Leave out prices and set price_text when you price on a call.",
+  "main-offer": {
+    "label": "[[Offer name, e.g. Website rebuild]]",
+    "kind": "[[What form it takes, e.g. a project, retainer, product, service, workshop, audit, or your own word]]",
+    "for": "[[Who it is for, e.g. owner-led trades businesses]]",
+    "outcome": "[[The result the buyer gets, in their words, e.g. More enquiries from your website]]",
+    "hero_line": "[[One line on what the offer is, e.g. A new website that brings in work, built in six weeks]]",
+    "deliverable": "[[What they receive, e.g. A new website, live on your domain]]",
+    "includes": [
+      "[[Something included]]",
+      "[[Something included]]",
+      "[[Something included]]"
+    ],
+    "excludes": [
+      "[[Something not included]]"
+    ],
+    "steps": [
+      {
+        "title": "[[Step one, e.g. A short call]]",
+        "text": "[[What happens in it]]"
+      },
+      {
+        "title": "[[Step two]]",
+        "text": "[[What happens in it]]"
+      },
+      {
+        "title": "[[Step three]]",
+        "text": "[[What happens in it]]"
+      }
+    ],
+    "length": "[[How long it takes, e.g. 6 weeks]]",
+    "prices": {
+      "[[Currency code, e.g. GBP]]": "[[Price as shown, e.g. From £3,500]]"
+    },
+    "base": {
+      "currency": "[[Currency code]]",
+      "amount": 0,
+      "prefix": "From "
+    },
+    "price_note": "[[A line under the price, e.g. Fixed fee, agreed before we start]]",
+    "booking_url": "[[https://your booking link for this offer]]",
+    "button": "[[Button wording, e.g. Book a 20-minute call]]",
+    "page": "standard"
+  }
+}

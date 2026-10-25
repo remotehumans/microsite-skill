@@ -1,0 +1,182 @@
+{
+  "_about": "A fictional sample provider for trying the skill and for its tests. Every name and result here is invented. Copy profiles/_template for your own business (python3 scripts/provider.py new your-business).",
+  "provider": {
+    "person": "Priya Shah",
+    "first_name": "Priya",
+    "business": "Northlight Ops",
+    "byline": "founder of Northlight Ops",
+    "tagline": "Helps service firms run smoother with AI",
+    "email": "priya@northlight.example",
+    "phone": "",
+    "linkedin": "https://www.linkedin.com/in/example",
+    "website": "https://northlight.example/",
+    "results_url": "https://northlight.example/results",
+    "results_label": "See more results →",
+    "story_url": "https://northlight.example/results/{id}",
+    "favicon": "https://northlight.example/favicon.png",
+    "photo": "photo.jpg",
+    "photo_alt_event": "Priya Shah speaking at an event",
+    "based_in": "Manchester, United Kingdom",
+    "language": "en-GB"
+  },
+  "about": {
+    "bio_html": "I founded <a href=\"https://northlight.example/results\" target=\"_blank\" rel=\"noopener\">Northlight Ops</a> after 15 years running operations in accountancy and care. Now I help owner-led service firms use AI to grow, cut costs and give people hours back. I map how the work really happens before anyone builds anything.",
+    "highlights": [
+      "Helped a 30-person accountancy close the month 40% faster.",
+      "Saved a care agency 12 hours a week on scheduling."
+    ],
+    "clients_label": "",
+    "client_logos": []
+  },
+  "booking": {
+    "default_offer": "sprint",
+    "legacy_link_pattern": "",
+    "short_prefix": "",
+    "utm_source": "microsite"
+  },
+  "proof_default": [],
+  "qualification": {
+    "goals": "Work with owner-led service firms where better operations show up in a quarter.",
+    "icp": "Owner-led UK service firms of 10 to 80 people that run on spreadsheets and email.",
+    "criteria": [
+      {
+        "id": "icp",
+        "question": "How closely do they match the ideal client above?"
+      },
+      {
+        "id": "pain",
+        "question": "Is there public evidence of the pain the offer solves?"
+      },
+      {
+        "id": "budget",
+        "question": "Do size and budget signals suggest they can pay the fee?"
+      },
+      {
+        "id": "owner",
+        "question": "Is the owner or director reachable?"
+      },
+      {
+        "id": "proof",
+        "question": "Is there a relevant proof point from our own work?"
+      },
+      {
+        "id": "example",
+        "question": "Can we build a worked example from their public material?"
+      }
+    ],
+    "scale": "0 = no, 1 = partly, 2 = clearly yes",
+    "go_threshold": 8,
+    "hard_no": [
+      "No reachable decision-maker after two independent sources",
+      "The site blocks automated access and too little is visible elsewhere"
+    ],
+    "ask_before_building": [
+      "rate floor",
+      "location or onsite limits",
+      "whether to proceed on a weak fit"
+    ]
+  },
+  "research": {
+    "country": "GB",
+    "sources": [
+      {
+        "question": "Size, ownership and structure",
+        "sources": [
+          "Companies House: officers, group companies and filed accounts"
+        ],
+        "enabled": true
+      },
+      {
+        "question": "What they do and how they make money",
+        "sources": [
+          "Their site (services, about, careers)",
+          "LinkedIn company page and staff list",
+          "Trade bodies and member directories"
+        ],
+        "enabled": true
+      },
+      {
+        "question": "Where the work is heavy",
+        "sources": [
+          "Sector public records (planning portals, regulator registers, tender portals, property portals)"
+        ],
+        "enabled": true
+      },
+      {
+        "question": "Real customer pain",
+        "sources": [
+          "Google reviews",
+          "Trustpilot and sector review sites (read the 1–3 star reviews for patterns)"
+        ],
+        "enabled": true
+      },
+      {
+        "question": "What they struggle to staff",
+        "sources": [
+          "Current and past job ads (LinkedIn, Indeed, their careers page)"
+        ],
+        "enabled": true
+      },
+      {
+        "question": "Tools they use, and how open they are",
+        "sources": [
+          "Website platform and widgets (booking, CRM, chat, forms)",
+          "Job ads naming software",
+          "Vendor customer case studies",
+          "Each tool's official API, access terms and official or community MCP servers"
+        ],
+        "enabled": true
+      },
+      {
+        "question": "What's changing",
+        "sources": [
+          "Press",
+          "Social posts",
+          "New branches",
+          "Regulation changes in their sector"
+        ],
+        "enabled": true
+      },
+      {
+        "question": "Their brand",
+        "sources": [
+          "scripts/extract_brand.py and scripts/capture_design.py",
+          "Their Instagram for photography style"
+        ],
+        "enabled": true
+      }
+    ],
+    "decision_maker_sources": [
+      "LinkedIn, viewed by a person or a logged-in browser session (never bulk profile visits)",
+      "The national company register's officers list",
+      "The company site",
+      "Trade press",
+      "Third-party directories"
+    ]
+  },
+  "delivery": {
+    "public_base_url": "https://northlight.example/for",
+    "publish_subdir": "public/for",
+    "branch": "main",
+    "deploy_hook": {
+      "type": "none"
+    },
+    "noindex_nginx_check": "",
+    "sitemap_url": ""
+  },
+  "integrations": {
+    "research_data": "none",
+    "transcription": "none",
+    "memory": "none",
+    "writing_voice": "none",
+    "outreach_method": "none",
+    "email_drafts": "none",
+    "film": "none",
+    "qr_code": "qrencode"
+  },
+  "voice": [
+    "British English. No em dashes. Plain words.",
+    "Never use \"not X, not Y\" or \"X, not Y\" constructions, hype-versus-real framing or AI-cliché names.",
+    "Use \"I\" for your personal practice and \"we\" where the business speaks."
+  ]
+}

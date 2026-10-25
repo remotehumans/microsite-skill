@@ -1,0 +1,26 @@
+{
+ "ashby-and-rowe": {
+  "chip": "New Leeds office",
+  "what": "Accountancy firm in York and Leeds. About 30 staff, growing its advisory work.",
+  "pay": "£3.4m turnover, £610k operating profit (FY2026 accounts).",
+  "why_now": "Opened a second office in Leeds in May and paused a bank-feed trial after mismatched payments.",
+  "why_now_url": "https://www.example.com/ashby-and-rowe/news/new-office",
+  "opportunity": "Month-end takes about 30% of team time across two offices. A sprint maps it and shows where AI frees partners for advisory work, which is where their growth is.",
+  "contact_why": "Helen Ashby, Managing Partner, signs off spend. Tom Rowe runs month-end.",
+  "opener": "Hi Helen, congratulations on the Leeds office. I made a short page on how your team could get month-end done sooner: {link}",
+  "kit": {
+   "contact": "Helen Ashby",
+   "facts": ["Leeds office opened May 2026", "Month-end is about 30% of team time", "Bank-feed trial paused"],
+   "beats": ["Their goal: room to advise", "What we noticed", "The sprint and price", "Book a call"],
+   "loom_script": "Hi Helen, I'm the person who sent you the page. In about 90 seconds I'll show you three things we noticed about Ashby & Rowe, and what a two-week sprint would give your team...",
+   "connection_note": "",
+   "linkedin_dm": "Thanks for connecting, Helen. Congratulations on the Leeds office. I put together a short page on getting month-end done sooner across both offices: {link}. There's a 90-second video too: {loom}",
+   "on_yes": "Great. Here's my calendar for a 30-minute call: [booking link]",
+   "email_to": "helen@example.com",
+   "email_subject": "Month-end across two offices",
+   "email_body": "Hi Helen,\n\nCongratulations on the Leeds office. I made a short page for Ashby & Rowe on getting month-end done sooner: {link}\n\nThere's a 90-second video on it too: {loom}\n\nWould a 30-minute call be useful?",
+   "follow_up_when": "day 7",
+   "follow_up": "Hi Helen, just checking the page reached you. Happy to walk Tom through it too if month-end sits with him."
+  }
+ }
+}

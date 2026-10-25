@@ -1,0 +1,47 @@
+<!-- ABOUTME: Worked pattern: swap image names, labels and source links for the company. Interactive "your schemes, reimagined" section (time-of-day, seasons, sketch-to-render) for a job-mode page. -->
+<!-- ABOUTME: Inserted by build_lp.py; {{IMG:name}} tokens are replaced with inlined JPEG data URIs. -->
+<section id="visual"><div class="wrap">
+  <div class="sec-head rv"><div class="num" style="--c:var(--yellow)"></div><div><h2>Your [[THINGS: schemes, properties, venues, products]], reimagined</h2><p class="sub">A taste of AI in the visual side of the business, made from your own published images. Same buildings, new moments.</p></div></div>
+
+  <div class="viz rv">
+    <div class="viz-head"><b>A day on the street</b><span>Drag through the day · <a href="https://www.example.com/their-project" target="_blank" rel="noopener">original</a></span></div>
+    <div class="stage" id="day">
+      <img src="{{IMG:street-dawn}}" alt="Street at dawn" data-k="0">
+      <img src="{{IMG:street-noon}}" alt="Street at midday (original CGI)" data-k="1">
+      <img src="{{IMG:street-golden}}" alt="Street at golden hour" data-k="2">
+      <img src="{{IMG:street-night}}" alt="Street at night" data-k="3">
+      <div class="clock" id="clock">06:00</div>
+    </div>
+    <input type="range" min="0" max="3" step="0.01" value="1" id="dayR" aria-label="Time of day">
+    <div class="ticks4"><span>Dawn</span><span>Midday · original</span><span>Golden hour</span><span>Night</span></div>
+  </div>
+
+  <div class="viz rv">
+    <div class="viz-head"><b>Four seasons in the courtyard</b><span>Pick a season · <a href="https://www.example.com/their-project" target="_blank" rel="noopener">original</a></span></div>
+    <div class="stage" id="season">
+      <img src="{{IMG:court-spring}}" alt="Courtyard in spring" data-k="spring">
+      <img src="{{IMG:court-summer}}" alt="Courtyard in summer (original CGI)" data-k="summer" class="on">
+      <img src="{{IMG:court-autumn}}" alt="Courtyard in autumn" data-k="autumn">
+      <img src="{{IMG:court-winter}}" alt="Courtyard in winter" data-k="winter">
+    </div>
+    <div class="seasons" role="tablist">
+      <button data-s="spring" style="--c:var(--green)">Spring</button><button data-s="summer" class="on" style="--c:var(--yellow)">Summer · original</button><button data-s="autumn" style="--c:var(--orange)">Autumn</button><button data-s="winter" style="--c:var(--blue)">Winter</button>
+    </div>
+  </div>
+
+  <div class="viz rv">
+    <div class="viz-head"><b>From sketch to scene</b><span>Drag the line · <a href="https://www.example.com/their-project" target="_blank" rel="noopener">original</a></span></div>
+    <div class="stage wipe" id="wipe">
+      <img src="{{IMG:terrace-render}}" alt="Terraces CGI (original)">
+      <div class="top-img" id="wipeTop"><img src="{{IMG:terrace-sketch}}" alt="Terraces as a pencil sketch"></div>
+      <div class="handle" id="handle"><span></span></div>
+    </div>
+  </div>
+
+  <div class="two rv" style="margin-top:34px">
+    <div><h3>Why this matters</h3><p>Early images help win councils, partners and communities over. With AI, one approved CGI can become every season, every hour and a resident's-eye moment within a few hours. That frees your visualisers for the hero shots.</p></div>
+    <div><h3>How it was made</h3><p>Each variation started from a CGI on your website and was edited with AI image generation, told to keep every building, window and street exactly as designed and change only light, season or medium. Then each one was checked against the original by eye.</p></div>
+  </div>
+  <!-- Optional film link: <p class="rv" style="margin-top:28px;font-weight:600;font-size:1.05rem"><a href="{{PROVIDER:public_base_url}}/[[SLUG]]/film.mp4" target="_blank" rel="noopener">▶ Watch the film</a></p> -->
+  <p class="src">AI concepts based on the company's published CGIs, for illustration only. Originals: street and courtyard on the <a href="https://www.example.com/their-project" target="_blank" rel="noopener">Architecture page</a>, terraces on the <a href="https://www.example.com/their-project" target="_blank" rel="noopener">Construction page</a> of londonplacemaking.com.</p>
+</div></section>

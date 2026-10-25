@@ -1,0 +1,83 @@
+{
+  "_about": "Wording on every page: your results, about you, and the voice rules the build checks. Locked: pages show it exactly as written.",
+  "proof_heading": "[[e.g. I've done this kind of work before.]]",
+  "copy": {
+    "proof_lead": "[[e.g. Three results, in numbers.]]"
+  },
+  "proof_tiles": [
+    {
+      "id": "result-1",
+      "number": "[[Headline number, e.g. 36 days]]",
+      "heading": "[[Short heading]]",
+      "text": "[[One or two plain sentences on what changed]]",
+      "who": "[[Client type · project type]]"
+    },
+    {
+      "id": "result-2",
+      "number": "[[Headline number, e.g. 36 days]]",
+      "heading": "[[Short heading]]",
+      "text": "[[One or two plain sentences on what changed]]",
+      "who": "[[Client type · project type]]"
+    },
+    {
+      "id": "result-3",
+      "number": "[[Headline number, e.g. 36 days]]",
+      "heading": "[[Short heading]]",
+      "text": "[[One or two plain sentences on what changed]]",
+      "who": "[[Client type · project type]]"
+    }
+  ],
+  "proof_art": "",
+  "about": {
+    "heading": "Hi, I'm [[First name]].",
+    "lead": "[[One sentence: why you run the business, naming it exactly as in profile.json]]",
+    "logo_label": "[[e.g. I've worked with]]",
+    "facts": [
+      {
+        "title": "[[Short fact title]]",
+        "text": "[[One plain sentence]]"
+      },
+      {
+        "title": "[[Short fact title]]",
+        "text": "[[One plain sentence]]"
+      },
+      {
+        "title": "[[Short fact title]]",
+        "text": "[[One plain sentence]]"
+      }
+    ]
+  },
+  "logos": [],
+  "banned_phrases": [
+    "unlock",
+    "leverage",
+    "synergy",
+    "game-changer",
+    "revolutionise",
+    "seamless",
+    "guaranteed",
+    "results may vary"
+  ],
+  "hedge_phrases": [
+    "perhaps",
+    "possibly",
+    "could potentially",
+    "may help",
+    "we believe",
+    "we think",
+    "no guarantee"
+  ],
+  "vocabulary_map": {
+    "utilise": "use",
+    "utilize": "use",
+    "optimise": "improve",
+    "optimize": "improve"
+  },
+  "reading_level": {
+    "metric": "Flesch-Kincaid grade",
+    "max_grade": 6.0,
+    "report_max_paragraph_words": 40,
+    "report_max_paragraph_sentences": 2,
+    "calibration": "Grade 6 reads easily for busy owners on a phone. Lower it for a plainer voice."
+  }
+}

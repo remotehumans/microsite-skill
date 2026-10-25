@@ -1,0 +1,53 @@
+{
+  "_about": "Fictional offers for the Fieldwork Web sample profile.",
+  "website-rebuild": {
+    "label": "Website rebuild",
+    "kind": "project",
+    "for": "Owner-led trades and home-service firms",
+    "outcome": "More enquiries from your website",
+    "hero_line": "A new website that brings in work, built in six weeks.",
+    "deliverable": "A new website, live on your own domain.",
+    "for_line": "Built for how your customers search and book.",
+    "includes": [
+      "A design in your own brand",
+      "A page for each service and area you cover",
+      "A quote form that goes straight to your phone",
+      "Your Google Business profile set up"
+    ],
+    "excludes": [
+      "Paid adverts",
+      "Monthly hosting"
+    ],
+    "steps": [
+      {
+        "title": "A short call",
+        "text": "We talk about the jobs you want more of."
+      },
+      {
+        "title": "Plan and design",
+        "text": "You see every page before we build it."
+      },
+      {
+        "title": "Build and launch",
+        "text": "We move your old pages and go live."
+      },
+      {
+        "title": "Two weeks of tweaks",
+        "text": "We fix anything you want changed."
+      }
+    ],
+    "length": "6 weeks",
+    "prices": {
+      "GBP": "From £3,500"
+    },
+    "base": {
+      "currency": "GBP",
+      "amount": 3500,
+      "prefix": "From "
+    },
+    "price_note": "Fixed fee, agreed before we start.",
+    "booking_url": "https://fieldwork.example/book",
+    "button": "Book a 20-minute call",
+    "page": "standard"
+  }
+}

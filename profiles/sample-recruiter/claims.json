@@ -1,0 +1,83 @@
+{
+  "_about": "Wording on every page: your results, about you, and the voice rules the build checks. Locked: pages show it exactly as written.",
+  "proof_heading": "Work like this, done before.",
+  "copy": {
+    "proof_lead": "Three results, in numbers."
+  },
+  "proof_tiles": [
+    {
+      "id": "cnc-hire",
+      "number": "19 days",
+      "heading": "To fill a CNC role",
+      "text": "A gearbox maker hired a programmer it had sought for a year.",
+      "who": "Gearbox maker · sample result"
+    },
+    {
+      "id": "retention",
+      "number": "94%",
+      "heading": "Still in post after a year",
+      "text": "Most engineers we place stay and grow.",
+      "who": "All placements · sample result"
+    },
+    {
+      "id": "team-build",
+      "number": "6",
+      "heading": "Engineers for a new line",
+      "text": "A packaging firm staffed a new line in one quarter.",
+      "who": "Packaging firm · sample result"
+    }
+  ],
+  "proof_art": "",
+  "about": {
+    "heading": "Hi, I'm Dan.",
+    "lead": "I started Northgate Talent to find engineers for the manufacturers I grew up around. I only take on roles I know I can fill.",
+    "logo_label": "",
+    "facts": [
+      {
+        "title": "12 years",
+        "text": "Hiring engineers for manufacturers."
+      },
+      {
+        "title": "400 engineers",
+        "text": "In our own network across the North."
+      },
+      {
+        "title": "Retained only",
+        "text": "One client per role, so you get full focus."
+      }
+    ]
+  },
+  "logos": [],
+  "banned_phrases": [
+    "unlock",
+    "leverage",
+    "synergy",
+    "game-changer",
+    "revolutionise",
+    "seamless",
+    "guaranteed",
+    "results may vary"
+  ],
+  "hedge_phrases": [
+    "perhaps",
+    "possibly",
+    "could potentially",
+    "may help",
+    "we believe",
+    "we think",
+    "no guarantee"
+  ],
+  "vocabulary_map": {
+    "utilise": "use",
+    "utilize": "use",
+    "optimise": "improve",
+    "optimize": "improve"
+  },
+  "reading_level": {
+    "metric": "Flesch-Kincaid grade",
+    "max_grade": 6.0,
+    "report_max_paragraph_words": 40,
+    "report_max_paragraph_sentences": 2,
+    "calibration": "Grade 6 reads easily for busy owners on a phone. Lower it for a plainer voice."
+  }
+}

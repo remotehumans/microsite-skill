@@ -1,0 +1,13 @@
+{
+ "company": "Ashby & Rowe",
+ "checked_on": "2026-10-01",
+ "note": "Fictional sample research record. Real records cite live sources with dates.",
+ "facts": [
+  {"fact": "Month-end work takes about 30% of team time.", "source": "https://www.example.com/ashby-and-rowe/blog/month-end", "date": "2026-07-14"},
+  {"fact": "Opened a second office in Leeds.", "source": "https://www.example.com/ashby-and-rowe/news/new-office", "date": "2026-05-02"},
+  {"fact": "Turnover £3.4m, operating profit £610k, year to March 2026.", "source": "https://www.example.com/company-register/ashby-and-rowe/accounts", "date": "2026-10-01"}
+ ],
+ "signals": [{"signal": "Second office opened", "date": "2026-05-02", "source": "https://www.example.com/ashby-and-rowe/news/new-office", "means": "More clients across two sites; month-end coordination gets harder."}],
+ "culture": {"summary": "Calm, careful and client-first.", "evidence": ["Blog: 'room to think'", "Long-standing client stories on their site"]},
+ "decision_maker": {"name": "Helen Ashby", "role": "Managing Partner", "confirmed_by": ["Team page (sample)", "Company register officers (sample)"]}
+}

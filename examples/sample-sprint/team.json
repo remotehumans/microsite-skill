@@ -1,0 +1,106 @@
+{
+  "_about": "A fictional team map for the Ashby & Rowe sample: each person is a group and a flag for whether their bio mentions tech.",
+  "checked_on": "2026-10-23",
+  "groups": [
+    {
+      "id": "leadership",
+      "label": "Leadership",
+      "cx": 500,
+      "cy": 92,
+      "r": 80
+    },
+    {
+      "id": "client-managers",
+      "label": "Partners and managers",
+      "cx": 185,
+      "cy": 300,
+      "r": 140
+    },
+    {
+      "id": "senior-accountants",
+      "label": "Senior accountants",
+      "cx": 815,
+      "cy": 305,
+      "r": 150
+    },
+    {
+      "id": "accountants",
+      "label": "Accountants",
+      "cx": 500,
+      "cy": 310,
+      "r": 100
+    },
+    {
+      "id": "technicians",
+      "label": "Bookkeepers",
+      "cx": 240,
+      "cy": 610,
+      "r": 118
+    },
+    {
+      "id": "admin",
+      "label": "Office team",
+      "cx": 760,
+      "cy": 612,
+      "r": 85
+    }
+  ],
+  "people": [
+    {
+      "group": "leadership",
+      "tech": true
+    },
+    {
+      "group": "client-managers",
+      "tech": true
+    },
+    {
+      "group": "client-managers",
+      "tech": false
+    },
+    {
+      "group": "client-managers",
+      "tech": false
+    },
+    {
+      "group": "senior-accountants",
+      "tech": true
+    },
+    {
+      "group": "senior-accountants",
+      "tech": false
+    },
+    {
+      "group": "senior-accountants",
+      "tech": false
+    },
+    {
+      "group": "senior-accountants",
+      "tech": true
+    },
+    {
+      "group": "accountants",
+      "tech": false
+    },
+    {
+      "group": "accountants",
+      "tech": false
+    },
+    {
+      "group": "technicians",
+      "tech": true
+    },
+    {
+      "group": "technicians",
+      "tech": false
+    },
+    {
+      "group": "technicians",
+      "tech": true
+    },
+    {
+      "group": "admin",
+      "tech": false
+    }
+  ]
+}

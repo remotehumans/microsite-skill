@@ -1,0 +1,27 @@
+<!-- ABOUTME: "Things I've built" interactive carousel for a job-mode page (squuaad, distil, client and internal systems). -->
+<!-- ABOUTME: Reusable proof section; {{PROOF:file}}, {{LOGOIMG:name}}, {{TOOL:slug:label}} and {{TOOLPNG:file:label}} tokens are inlined by build_page.py. -->
+<section id="built" class="band"><div class="wrap">
+  <div class="sec-head rv"><div class="num" style="--c:var(--blue)"></div><div><h2>Things I've built</h2><p class="sub">Products of my own, and systems for clients and my own business. Designed, built and shipped.</p></div></div>
+
+  <div class="car rv" id="car">
+    {{PROOF_CAROUSEL}}
+
+    <div class="car-nav">
+      <button id="carPrev" aria-label="Previous">←</button>
+      <div class="car-dots" id="carDots"></div>
+      <button id="carNext" aria-label="Next">→</button>
+    </div>
+  </div>
+  <div class="stack-wrap rv">
+    <h3>The tools I build with</h3>
+    <p class="hw-note" style="margin-top:0">I pick the right tool for each job and switch as better ones arrive.</p>
+    <div class="stack-grid">
+      <div><b>AI models and agents</b><div class="logos">{{TOOL:claude:Claude and Claude Code}}{{TOOL:openai:ChatGPT and Codex}}{{TOOL:googlegemini:Gemini}}{{TOOL:openrouter:OpenRouter}}{{TOOLPNG:hermes-wordmark:Hermes agent}}</div></div>
+      <div><b>Visuals and media</b><div class="logos">{{TOOL:openai:ChatGPT Images}}{{TOOL:figma:Figma}}{{TOOLPNG:hyperframes:HyperFrames video}}{{TOOL:elevenlabs:ElevenLabs}}{{TOOLPNG:fish:Fish Audio}}</div></div>
+      <div><b>Knowledge and automation</b><div class="logos">{{TOOL:obsidian:Obsidian}}{{TOOL:notion:Notion}}{{TOOL:microsoft365:Microsoft 365}}{{TOOL:googledrive:Google Drive}}{{TOOL:nvidia:Parakeet transcription}}{{TOOL:n8n:n8n}}{{TOOL:make:Make}}{{TOOL:supabase:Supabase}}</div></div>
+      <div><b>Building</b><div class="logos">{{TOOL:cursor:Cursor}}{{TOOL:github:GitHub}}{{TOOL:python:Python}}{{TOOL:typescript:TypeScript}}{{TOOL:swift:Swift}}{{TOOL:react:React Native}}{{TOOL:expo:Expo}}</div></div>
+      <div><b>Deployment and DevOps</b><div class="logos">{{TOOL:hetzner:Hetzner servers}}{{TOOL:coolify:Coolify}}{{TOOL:docker:Docker}}{{TOOL:cloudflare:Cloudflare}}{{TOOL:railway:Railway}}{{TOOL:linux:Linux}}{{TOOL:tailscale:Tailscale}}{{TOOL:uptimekuma:Uptime Kuma}}{{TOOL:appstore:TestFlight and App Store}}{{TOOL:expo:Expo EAS}}</div></div>
+    </div>
+  </div>
+  <p class="rv" style="margin-top:22px;font-weight:600"><a href="{{PROVIDER:results_url}}" target="_blank" rel="noopener">{{PROVIDER:results_label}}</a></p>
+</div></section>

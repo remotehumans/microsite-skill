@@ -1,0 +1,13 @@
+{
+  "_about": "Copy to settings.json (git ignores it) and edit. Machine-local choices only: which profile to use, where things live on this computer, and which tool runs each step. Who you are and what you sell goes in profiles/<name>/.",
+  "profile": "your-business",
+  "paths": {
+    "site_repo": "~/code/your-website",
+    "projects": "~/microsites"
+  },
+  "tools": {
+    "browser": "agent-browser",
+    "image": "codex",
+    "chrome": ""
+  }
+}

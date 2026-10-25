@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow"><meta name="color-scheme" content="light">
+  <title>Microsite gallery</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="style.css"><link rel="stylesheet" href="team.css"><script src="app.js" defer></script><script src="funnel-view.js" defer></script><script src="people-view.js" defer></script><script src="person-drawer.js" defer></script><script src="today-view.js" defer></script><script src="companies-view.js" defer></script><script src="shell.js" defer></script>
+<script src="page-review-ui.js" defer></script>
+<link rel="stylesheet" href="team-intelligence.css"><script src="team-intelligence.js" defer></script><script src="team-view.js" defer></script>
+</head>
+<body class="view-today">
+  <a class="skip" href="#content">Skip to content</a>
+  <div class="app">
+  <aside class="sidebar" aria-label="Main">
+    <a class="brand" href="/"><span id="brand-name">Microsites</span><small>Outreach</small></a>
+    <nav id="views" class="side-nav" aria-label="Choose view">
+      <button data-view="today" aria-pressed="true"><span>Today</span><b id="nav-today-count"></b></button>
+      <button data-view="companies" aria-pressed="false"><span>Companies</span><b id="nav-companies-count"></b></button>
+      <button data-view="people" aria-pressed="false"><span>People</span><b id="nav-people-count"></b></button>
+      <button data-view="dashboard" aria-pressed="false"><span>Dashboard</span></button>
+    </nav>
+    <label class="side-field">Campaign<select id="campaign-select" aria-label="Campaign"><option value="all">All campaigns</option></select></label>
+    <nav id="collections" class="collections" aria-label="Filter collection" hidden></nav>
+    <div class="side-status"><p id="collection-summary">Loading…</p><span id="updated"></span><span id="monitor-state"></span><button id="refresh">Refresh ↻</button></div>
+    <nav id="creation-chats" class="side-links" aria-label="Creation chats"></nav>
+  </aside>
+  <main id="content" tabindex="-1">
+    <section id="today-view" class="view-panel" aria-label="Today"></section>
+    <section id="people-view" class="view-panel people-view" aria-label="People" hidden></section>
+    <section id="funnel-view" class="view-panel funnel-view" aria-label="Dashboard" hidden></section>
+    <section id="companies-view" class="view-panel" aria-label="Companies" hidden>
+      <header class="view-head"><div><h1>Companies</h1><p class="sub">Review each microsite, decide, then message the right person. Press / to search, ← → to move between companies.</p></div></header>
+      <nav id="stages" class="chips" aria-label="Filter by stage"></nav>
+      <section class="toolbar" aria-label="Gallery controls">
+        <label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Find a company, sector or signal…" aria-label="Search companies, sectors and signals"><kbd>/</kbd></label>
+        <div class="seg layout-toggle" role="group" aria-label="Layout"><button data-layout="grid" aria-pressed="true">Cards</button><button data-layout="list" aria-pressed="false">List</button></div>
+        <details class="filter-menu"><summary>Filter & sort</summary><div class="filter-pop">
+          <label>Sector<select id="sector" aria-label="Filter sector"><option value="">All sectors</option></select></label>
+          <label>My review<select id="feedback-filter" aria-label="Filter your feedback"><option value="">All feedback</option><option value="unreviewed">To review</option><option value="shortlist">Shortlisted</option><option value="changes">Changes requested</option><option value="reviewed">Reviewed</option></select></label>
+          <label>Sort<select id="sort" aria-label="Sort gallery"><option value="rank">Campaign order</option><option value="name">Company A–Z</option><option value="updated">Recently changed</option></select></label>
+          <div class="density" role="group" aria-label="Preview size"><button id="roomy" aria-label="Large previews" aria-pressed="true">Large</button><button id="compact" aria-label="Compact previews" aria-pressed="false">Compact</button></div>
+          <button id="export">Export my feedback ↓</button></div></details>
+      </section>
+      <div class="result-line"><p id="results" role="status" aria-live="polite"></p></div>
+      <div id="error" role="alert" hidden></div>
+      <section id="gallery" class="gallery" aria-label="Microsite gallery" tabindex="-1"></section>
+      <div id="empty" class="empty-state" hidden><h2>No matching companies.</h2><p>Try a different name, sector or stage.</p><button id="reset">Reset filters</button></div>
+    </section>
+  </main>
+  </div>
+  <aside id="drawer" class="drawer" aria-label="Person" hidden></aside>
+  <dialog id="reviewer" aria-labelledby="review-title">
+    <header class="review-header"><div class="review-company"><span id="position"></span><h2 id="review-title"></h2></div><div class="review-actions"><a id="external-site" target="_blank" rel="noopener">Open microsite ↗</a><button id="share-site">Share microsite</button><button id="previous" aria-label="Previous company">←</button><button id="next" aria-label="Next company">→</button><button id="close-review" aria-label="Close review">✕</button></div></header>
+    <nav class="mobile-pane-switch" aria-label="Review view"><button id="show-opportunity" aria-pressed="true">Opportunity & people</button><button id="show-page" aria-pressed="false">Review site</button></nav>
+    <div class="review-layout">
+      <section class="site-pane" aria-label="Microsite preview"><div class="preview-toolbar"><div role="group" aria-label="Preview device"><button id="desktop" aria-pressed="true">Desktop</button><button id="phone" aria-pressed="false">Phone</button></div><span id="preview-state">Live local page</span><button id="reload-preview" aria-label="Reload preview">↻</button></div><div id="viewport"><iframe id="site-frame" title="Microsite live preview" sandbox="allow-scripts allow-popups allow-popups-to-escape-sandbox" referrerpolicy="no-referrer"></iframe><p id="no-page" hidden>This company has research saved. A microsite has not been built yet.</p></div></section>
+      <aside class="evidence-pane" aria-label="Research and review"><nav id="tabs" aria-label="Review information"><button data-tab="overview" aria-selected="true">Overview</button><button data-tab="research" aria-selected="false">Research</button><button data-tab="team" aria-selected="false">Team</button><button data-tab="reviews" aria-selected="false">Checks & files</button></nav><div id="evidence"></div></aside>
+    </div>
+  </dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+</body></html>

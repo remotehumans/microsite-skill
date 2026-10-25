@@ -1,0 +1,9 @@
+{
+ "checked_at": "2026-10-01T10:00:00Z",
+ "attempts": [{"provider": "treg", "job": "find a work email", "result": "found", "note": "Fictional sample lookup."}],
+ "people": [
+  {"name": "Helen Ashby", "role": "Managing Partner", "role_source": "https://www.example.com/ashby-and-rowe/team",
+   "why_relevant": "Signs off spend and owns the growth plan for the Leeds office.",
+   "email": "helen@example.com", "email_source": "enrichment/cost-ledger.json", "email_status": "provider_verified"}
+ ]
+}

@@ -1,0 +1,8 @@
+# Built pages are generated per run and can be several MB; keep them out of git.
+build/
+*.log
+# Machine-local settings (profile choice, paths, tools); see settings.example.json.
+settings.json
+__pycache__/
+dist/
+leak-patterns.txt

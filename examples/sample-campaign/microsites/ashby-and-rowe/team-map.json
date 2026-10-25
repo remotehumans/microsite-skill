@@ -1,0 +1,15 @@
+{
+ "company": "Ashby & Rowe",
+ "checked_on": "2026-10-01",
+ "business_only": true,
+ "coverage": "Fictional sample: public roles only.",
+ "groups": [
+  {"id": "leadership", "label": "Leadership", "cx": 290, "cy": 160, "r": 130},
+  {"id": "operations", "label": "Operations", "cx": 720, "cy": 160, "r": 130}
+ ],
+ "people": [
+  {"id": "helen-ashby", "name": "Helen Ashby", "role": "Managing Partner", "group": "leadership", "role_source": "https://www.example.com/ashby-and-rowe/team", "checked_on": "2026-10-01", "business_only": true, "tech": false, "help": "Decides on the sprint."},
+  {"id": "james-rowe", "name": "James Rowe", "role": "Partner", "group": "leadership", "role_source": "https://www.example.com/ashby-and-rowe/team", "checked_on": "2026-10-01", "business_only": true, "tech": false, "help": "Leads advisory clients."},
+  {"id": "tom-rowe", "name": "Tom Rowe", "role": "Operations Manager", "group": "operations", "role_source": "https://www.example.com/ashby-and-rowe/team", "checked_on": "2026-10-01", "business_only": true, "tech": true, "help": "Runs month-end; ran the bank-feed trial."}
+ ]
+}

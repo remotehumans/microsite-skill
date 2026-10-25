@@ -1,0 +1,164 @@
+{
+ "slug": "ashby-and-rowe",
+ "name": "Ashby & Rowe",
+ "prepared_date": "October 2026",
+ "brand": {
+  "colours": {
+   "teal": "#2e5e5a",
+   "deep": "#1f3f3c",
+   "yellow": "#e8c547",
+   "ink": "#222222",
+   "muted": "#5c6563",
+   "paper": "#fbfaf6",
+   "navy": "#1f3f3c",
+   "soft": "#f4efe0",
+   "pale": "#dfe9e6",
+   "line": "#e6e0d2"
+  },
+  "fonts": {
+   "body": "Source Sans 3",
+   "heading": "Libre Baskerville",
+   "google_url": "https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Libre+Baskerville:wght@400;700&display=swap"
+  }
+ },
+ "logo": "art/logo.png",
+ "hero": {
+  "path": "images/hero.jpg",
+  "photo": true,
+  "alt": "Two Ashby & Rowe accountants reviewing a ledger together"
+ },
+ "goal": {
+  "headline": "Grow advisory work. Give your accountants room to think.",
+  "lead": "Get reliable numbers to your team sooner, with more time to guide the owners you advise.",
+  "report": "The goal: get reliable numbers to your team sooner. Then your accountants have more time to advise."
+ },
+ "noticed": [
+  {
+   "date": "2026-07-14",
+   "url": "https://www.example.com/ashby-and-rowe/blog/month-end",
+   "text": "Your blog says month-end work takes about 30% of team time."
+  },
+  {
+   "date": "2026-07-14",
+   "url": "https://www.example.com/ashby-and-rowe/blog/month-end",
+   "text": "You paused a bank-feed trial after some payments matched the wrong invoices."
+  },
+  {
+   "date": "2026-05-02",
+   "url": "https://www.example.com/ashby-and-rowe/news/new-office",
+   "text": "You opened a second office in Leeds in May."
+  }
+ ],
+ "look_at_first": [
+  {
+   "title": "Make room for more advisory work",
+   "text": "Find what helps client managers spend more of the month discussing decisions with clients."
+  },
+  {
+   "title": "Start client conversations with useful numbers",
+   "text": "Map the route from client records to accurate month-start information."
+  },
+  {
+   "title": "Keep technology decisions grounded",
+   "text": "Build on your existing tools and the lessons from your own trials."
+  },
+  {
+   "title": "Reduce manual data movement",
+   "text": "Find repeated collection and handovers while keeping accounting judgement with your people."
+  }
+ ],
+ "example": {
+  "heading": "Follow your route from records to useful advice.",
+  "lead": "Your July post names collecting, posting and matching data, then the work that makes the numbers useful.",
+  "source_label": "Read your post on month-end work ↗",
+  "source_url": "https://www.example.com/ashby-and-rowe/blog/month-end",
+  "tabs": [
+   {
+    "title": "Collect the information",
+    "published": "Your post describes chasing clients for records each month.",
+    "explore": "Map what you need from clients and how the team sees what is ready for review."
+   },
+   {
+    "title": "Match with care",
+    "published": "You paused a bank-feed trial after some payments matched the wrong invoices.",
+    "explore": "Capture the lessons from that trial. Find what reviewers need before they accept a match."
+   },
+   {
+    "title": "Start the month ready to advise",
+    "published": "You want accountants to start each month with the numbers ready.",
+    "explore": "Map the whole route to that conversation. Rank changes that give accountants more room to advise."
+   }
+  ],
+  "route_heading": "From client records to advice",
+  "route": [
+   {
+    "name": "Collect",
+    "text": "Get records and papers from the client.",
+    "ai": "List what is missing",
+    "person": "Asks the client",
+    "example_hours": 12
+   },
+   {
+    "name": "Post",
+    "text": "Enter them in the books.",
+    "ai": "Draft the entry",
+    "person": "Approves it",
+    "example_hours": 18
+   },
+   {
+    "name": "Match",
+    "text": "Tie each payment to the right invoice.",
+    "ai": "Suggest a match and show why",
+    "person": "Accepts, rejects or holds",
+    "example_hours": 26
+   },
+   {
+    "name": "Review",
+    "text": "A person reviews the numbers.",
+    "ai": "Flag odd items",
+    "person": "Signs off",
+    "example_hours": 9
+   },
+   {
+    "name": "Advise",
+    "text": "The client manager uses the numbers in the month-start talk.",
+    "ai": "Draft a short summary",
+    "person": "Decides what the client sees",
+    "example_hours": 10
+   }
+  ],
+  "stopped_at": 3,
+  "stopped_callout": "Step 3 is where your bank-feed trial stopped. Some payments matched the wrong invoices."
+ },
+ "public_number": {
+  "value": 30,
+  "unit": "%",
+  "label": "Your blog says about 30% of team time goes on month-end work.",
+  "period": "of team time, in a typical month.",
+  "url": "https://www.example.com/ashby-and-rowe/blog/month-end",
+  "date": "2026-07-14",
+  "source_label": "Your month-end post",
+  "square_label": "Each square is 1% of team time."
+ },
+ "tools": [
+  {
+   "name": "Bank feed",
+   "known": "Trial paused after wrong matches (July 2026)",
+   "action": "Find out why. Use the lessons.",
+   "source_url": "https://www.example.com/ashby-and-rowe/blog/month-end",
+   "date": "2026-07-14"
+  },
+  {
+   "name": "Others",
+   "known": "We list them in the team interviews",
+   "action": "Keep what works."
+  }
+ ],
+ "method_intro": "We start with your accountants, bookkeepers, reviewers and the people who run your systems. The scope can cover one team or the whole firm.",
+ "team_json": "team.json",
+ "currency": "GBP",
+ "noticed_summary": "From the outside, the opportunity looks like giving your accountants more time for the advice clients value.",
+ "report": {
+  "ranking_note": "Auto-matching is last. Your bank-feed trial showed why: wrong matches hurt payment chasing."
+ }
+}

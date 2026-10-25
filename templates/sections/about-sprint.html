@@ -1,0 +1,19 @@
+<!-- ABOUTME: Locked "Hi, I'm {first name}" section for sprint pages: photo, bio, client logo strip, proof bullets and a local line, all from the profile. -->
+<!-- ABOUTME: Copy verbatim; restyle only through theme.css. Bio, highlights and client logos come from the active profile's profile.json. -->
+<section id="about"><div class="wrap about">
+  <div class="ph2 rv"><img src="{{PHOTO}}" alt="{{PROVIDER:person}}"></div>
+  <div class="rv d1">
+    <div class="eyebrow">About me</div>
+    <h2 style="margin:10px 0 14px">Hi, I'm {{PROVIDER:first_name}}.</h2>
+    <p>{{PROVIDER:bio_html}}</p>
+    {{PROVIDER:linkedin_html}}
+    <div class="clients" aria-label="Organisations {{PROVIDER:first_name}} has worked with">
+      <small>{{PROVIDER:clients_label}}</small>
+      <div class="clogos">{{CLIENT_LOGOS}}</div>
+    </div>
+    <ul>
+{{PROVIDER:highlights_html}}
+    </ul>
+    <p class="cta">[[LOCAL_LINE]]</p>
+  </div>
+</div></section>

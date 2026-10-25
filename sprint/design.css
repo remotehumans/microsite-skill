@@ -1,0 +1,41 @@
+/* ABOUTME: Structure for the optional design choices in company.json design: top bar, photo hero, photo cards, button pairs and motion.
+ * ABOUTME: Neutral on purpose; the project's theme.css gives them the company's own colours, type and shapes. */
+.refresh .rf-masthead{position:sticky;top:0;z-index:50}
+.refresh .rf-topbar{background:var(--paper);color:var(--ink);font-size:14px}
+.refresh .rf-topbar .rf-wrap{display:flex;gap:18px;align-items:center;flex-wrap:wrap;min-height:44px}
+.refresh .rf-topbar a{color:inherit;text-decoration:none}
+.refresh .rf-top-button{background:var(--yellow);color:#fff!important;padding:12px 22px;font-weight:700}
+.refresh .rf-hero-photo{position:relative;padding:0;min-height:min(82vh,760px);display:flex;align-items:center;color:#fff;overflow:hidden}
+.refresh .rf-hero-photo .rf-hero-media{position:absolute;inset:0}
+.refresh .rf-hero-photo .rf-hero-media img{width:100%;height:100%;object-fit:cover;margin:0;max-height:none}
+.refresh .rf-hero-photo .rf-hero-shade{position:absolute;inset:0;background:rgba(0,0,0,.5)}
+.refresh .rf-hero-photo .rf-wrap{position:relative;padding:90px 0;text-align:center}
+.refresh .rf-hero-box{max-width:900px;margin:0 auto;padding:48px 40px}
+.refresh .rf-hero-box.rf-framed{border:1px solid var(--yellow)}
+.refresh .rf-hero-photo h1,.refresh .rf-hero-photo .lead,.refresh .rf-hero-photo p,.refresh .rf-hero-photo .eyebrow,.refresh .rf-hero-photo .bridge a{color:#fff}
+.refresh .rf-accent{color:var(--yellow)}
+.refresh .rf-buttons{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin:22px 0}
+.refresh .rf-buttons .rf-button{margin:0}
+.refresh .rf-button-alt{background:#fff!important;color:var(--ink)!important;border-color:#fff!important}
+.refresh .rf-hero-tagline{font-size:clamp(20px,2vw,26px);margin:26px 0 0}
+.refresh .rf-card-photo{padding:0;overflow:hidden;display:flex;flex-direction:column}
+.refresh .rf-card-photo img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}
+.refresh .rf-card-photo .rf-card-label{padding:20px 22px}
+.refresh .rf-menu{display:none;background:none;border:1px solid currentColor;color:inherit;font:inherit;padding:8px 16px;cursor:pointer}
+@media(max-width:700px){.refresh .rf-hero-box{padding:30px 18px}.refresh .rf-topbar{font-size:13px}
+  .refresh .rf-header:has(.rf-menu){flex-wrap:wrap;align-items:center}
+  .refresh .rf-header:has(.rf-menu) .rf-menu{display:block;margin-left:auto}
+  .refresh .rf-header:has(.rf-menu) nav{display:none;flex-basis:100%;max-width:none;flex-direction:column;align-items:flex-start;gap:14px;padding:16px 0}
+  .refresh .rf-header.rf-open nav{display:flex}}
+/* Proof and about: the provider's locked wording, numbers and logos in the company's own colours. */
+.refresh #proof,.refresh #about{--paper:var(--soft);--ink:var(--deep);--orange:var(--teal);--grey:var(--muted);--rule:var(--line)}
+/* Motion: transitions on interactive parts, optional reveal on scroll, both off for reduced motion. */
+[data-reveal] a,[data-reveal] button,[data-reveal] .rf-card,[data-reveal] img{transition:color var(--motion-duration) var(--motion-ease),background-color var(--motion-duration) var(--motion-ease),border-color var(--motion-duration) var(--motion-ease),opacity var(--motion-duration) var(--motion-ease),transform var(--motion-duration) var(--motion-ease),box-shadow var(--motion-duration) var(--motion-ease)}
+[data-reveal] .rf-card-photo:hover img{transform:scale(1.04)}
+[data-reveal] .rf-button:hover{opacity:.88}
+[data-smooth]{scroll-behavior:smooth}
+html:has(body[data-smooth]){scroll-behavior:smooth}
+[data-reveal="fade-up"] .rf-reveal{opacity:0;transform:translateY(24px);transition:opacity .7s var(--motion-ease),transform .7s var(--motion-ease)}
+[data-reveal="fade-up"] .rf-reveal.is-in{opacity:1;transform:none}
+@media print{[data-reveal="fade-up"] .rf-reveal{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){[data-reveal] *{transition:none!important}[data-reveal="fade-up"] .rf-reveal{opacity:1;transform:none}html:has(body[data-smooth]){scroll-behavior:auto}}

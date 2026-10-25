@@ -1,0 +1,46 @@
+{
+  "_about": "Fictional offers for the Northgate Talent sample profile.",
+  "retained-search": {
+    "label": "Retained engineering search",
+    "kind": "service",
+    "for": "Manufacturers hiring skilled engineering roles",
+    "outcome": "The right engineer in post, sooner",
+    "hero_line": "A retained search for the engineering roles you struggle to fill.",
+    "deliverable": "A shortlist of three to five checked engineers.",
+    "for_line": "Every engineer on it has been tested on the work you need.",
+    "includes": [
+      "A role brief written with your team",
+      "A search of our engineering network",
+      "A skills test for every engineer",
+      "Interviews booked and feedback gathered"
+    ],
+    "excludes": [
+      "Temporary staff",
+      "Payroll"
+    ],
+    "steps": [
+      {
+        "title": "Brief",
+        "text": "We spend an hour on the role with you."
+      },
+      {
+        "title": "Search",
+        "text": "We talk to engineers in our network and beyond."
+      },
+      {
+        "title": "Shortlist",
+        "text": "You meet three to five tested engineers."
+      },
+      {
+        "title": "Offer",
+        "text": "We help you agree the offer and start date."
+      }
+    ],
+    "length": "Shortlist in 3 weeks",
+    "price_text": "15% of first-year salary",
+    "price_note": "A third when the search starts, the rest when they start.",
+    "booking_url": "https://northgate.example/call",
+    "button": "Book a 15-minute call",
+    "page": "standard"
+  }
+}

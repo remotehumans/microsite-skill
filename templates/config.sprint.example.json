@@ -1,0 +1,14 @@
+{
+  "out": "build/page.html",
+  "page": "page.src.html",
+  "logo": "images/logo.png",
+  "palette": {"green": "#000000", "blue": "#000000", "red": "#000000", "yellow": "#000000", "teal": "#000000", "orange": "#000000", "dgreen": "#000000"},
+  "images": {},
+  "proof": ["discovery", "brain", "enterprise", "sheena-jo", "iain"],
+  "sections": [
+    {"file": "sections/building-blocks-sprint.html", "before": "<section id=\"sprint\">"},
+    {"file": "sections/sprint-offer.html", "replace": "sprint"},
+    {"drop": "plan"},
+    {"file": "sections/things-built.html", "before": "<section><div class=\"wrap about\">"}
+  ]
+}
